@@ -30,7 +30,6 @@ function readLine(fname) {
     num = parseInt(line);
     byte = num >> 3; // num/8 = num/(2^3) = num >> 3 
     arry[byte] |= (1 << (num & 7)); // num % 8 = num&7
-    // console.log(`chunk=${chunk}, ${arry[chunk]}`);
   }).on('close', () => {
     const ws = fs.createWriteStream(fname.slice(0, -4) + "-sorted.txt");
     arry.forEach((ele, idx) => { // each `ele` is a byte chunk
