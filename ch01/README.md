@@ -19,7 +19,7 @@
 - JavaScript実装は `js` ディレクトリ以下．
   - JavaScriptの配列は実際にはオブジェクトのリストになるため，`uint8array`
   - 7桁の電話番号100万件のデータは `src/7digits.txt`．このデータの生成は `node src/GenerateData.js > src/7digits.txt`
-- 問題3の実装は `src/SortWithBitArray.js`
+- 問題3: `src/SortWithBitArray.js`
   `cd src && node SortWithBitArray.js` で実行．
 - 問題3のビット配列を使う代わりに通常の配列にtrue/falseを格納してソートするレファレンス実装が `src/SortWithArray.js`．
   `cd src && node SortWithArray.js` で実行．
