@@ -31,7 +31,7 @@
 
 ## 問題2
 
-問題3のビット配列を使った実装 [`src/SortWithBitArray.js`](js/src/SortWithBitArray.js) を参照．
+- JavaScriptの実装は問題3のビット配列を使った実装 [`src/SortWithBitArray.js`](js/src/SortWithBitArray.js) を参照．
 
 ## 問題3
 
