@@ -21,6 +21,18 @@
   - 7桁の電話番号100万件のデータは [`src/7digits.txt`](js/src/7digits.txt)．このデータの生成スクリプトは [`src/GenerateData.js`](js/src/GenerateData.js) で定義．  
     実行方法: `node src/GenerateData.js > src/7digits.txt`
 
+## 問題1
+
+**JavaScript実装（以下 `js` ディレクトリ以下）**
+
+メモリが沢山あるという前提だが，ファイル内の電話番号は1行ずつパースしないといけないので，ストリームを使って1行ずつ読み込みながら配列に格納する．実装は [`src/SortWithLibrary.js`](js/src/SortWithLibrary.js)．ソート結果は `src/7digits-lib-sorted.txt` に書き出す．
+
+実行方法: `cd src && node SortWithLibrary.js`
+
+## 問題2
+
+問題3のビット配列を使った実装 [`src/SortWithBitArray.js`](js/src/SortWithBitArray.js) を参照．
+
 ## 問題3
 
 メモリに制約があるという前提なので，データの読み込みはストリームを使い部分的に読み込みながら処理していく．
