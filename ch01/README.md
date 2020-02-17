@@ -24,9 +24,11 @@
 
 メモリに制約があるという前提なので，データの読み込みはストリームを使い部分的に読み込みながら処理していく．
 
-JavaScript実装（以下 `js` ディレクトリ以下）
+### JavaScript実装（以下 `js` ディレクトリ以下）
 
-- `src/SortWithBitArray.js`: ビット配列を使ったバージョン．実行すると `src/7digits-sorted.txt` ファイルにソート結果を書き出し，コンソールに使用メモリを表示する．\
+- `src/SortWithBitArray.js`  
+  ビット配列を使ったバージョン．実行すると `src/7digits-sorted.txt` ファイルにソート結果を書き出し，コンソールに使用メモリを表示する．  
   実行方法: `cd src && node SortWithBitArray.js`
-- `src/SortWithArray.js`: 問題3のビット配列を使う代わりに通常の配列にtrue/falseを格納してソートするレファレンス実装．配列のサイズ分だけ若干使用メモリが増える．ソート結果は `src/7digits-sorted2.txt` に書き出す．\
+- `src/SortWithArray.js`  
+  問題3のビット配列を使う代わりに通常の配列にtrue/falseを格納してソートするレファレンス実装．配列のサイズ分だけ若干使用メモリが増える．ソート結果は `src/7digits-sorted2.txt` に書き出す．  
   実行方法: `cd src && node SortWithArray.js`
