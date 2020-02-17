@@ -25,7 +25,7 @@
 
 メモリに制約があるという前提なので，データの読み込みはストリームを使い部分的に読み込みながら処理していく．
 
-### JavaScript実装（以下 `js` ディレクトリ以下）
+**JavaScript実装（以下 `js` ディレクトリ以下）**
 
 - [`src/SortWithBitArray.js`](js/src/SortWithBitArray.js)  
   ビット配列を使ったバージョン．実行すると `src/7digits-sorted.txt` ファイルにソート結果を書き出し，コンソールに使用メモリを表示する．  
