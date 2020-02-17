@@ -19,7 +19,14 @@
 - JavaScript実装は `js` ディレクトリ以下．
   - JavaScriptの配列は実際にはオブジェクトのリストになるため，`uint8array`
   - 7桁の電話番号100万件のデータは `src/7digits.txt`．このデータの生成は `node src/GenerateData.js > src/7digits.txt`
-- 問題3: `src/SortWithBitArray.js`\
-  `cd src && node SortWithBitArray.js` で実行．
-- 問題3のビット配列を使う代わりに通常の配列にtrue/falseを格納してソートするレファレンス実装が `src/SortWithArray.js`．\
-  `cd src && node SortWithArray.js` で実行．
+
+## 問題3
+
+メモリに制約があるという前提なので，データの読み込みはストリームを使い部分的に読み込みながら処理していく．
+
+JavaScript実装（以下 `js` ディレクトリ以下）
+
+- `src/SortWithBitArray.js`: ビット配列を使ったバージョン．実行すると `src/7digits-sorted.txt` ファイルにソート結果を書き出し，コンソールに使用メモリを表示する．\
+  実行方法: `cd src && node SortWithBitArray.js`
+- `src/SortWithArray.js`: 問題3のビット配列を使う代わりに通常の配列にtrue/falseを格納してソートするレファレンス実装．配列のサイズ分だけ若干使用メモリが増える．ソート結果は `src/7digits-sorted2.txt` に書き出す．\
+  実行方法: `cd src && node SortWithArray.js`
