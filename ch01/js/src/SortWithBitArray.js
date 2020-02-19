@@ -41,6 +41,7 @@ function readLine(fname) {
         }
       }
     });
+    ws.end();
     printHeapUsage();
   });
 }

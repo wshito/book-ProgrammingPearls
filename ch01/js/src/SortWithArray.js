@@ -36,6 +36,7 @@ function readLine(fname) {
         ws.write('\n');
       }
     });
+    ws.end();
     printHeapUsage();
   });
 
