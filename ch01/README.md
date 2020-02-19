@@ -45,3 +45,12 @@
 - [`src/SortWithArray.js`](js/src/SortWithArray.js)  
   問題3のビット配列を使う代わりに通常の配列にtrue/falseを格納してソートするレファレンス実装．配列のサイズ分だけ若干使用メモリが増える．ソート結果は `src/7digits-sorted2.txt` に書き出す．  
   実行方法: `cd src && node SortWithArray.js`
+
+## 問題4
+
+**JavaScript実装（以下 `js` ディレクトリ以下）**
+
+[`src/GenerateData.js`](js/src/GenerateData.js) で実装．模範解答の実装と比べてどちらが速いかは計測が必要．模範解答では10^7個のデータを生成したあと，頭から10^6個の配列のみスワップすることでシャッフルしている．ただし，スワップ先は10^7個までを対象としている．`GenerateData.js` では10^7個をシャッフルして10^6個を取り出している．
+
+模範解答の方法で実装するならば，[0, 10^7] の整数値を返す `randint` は `Math.random() * (10 ** 7) | 0` で実装できる．
+
